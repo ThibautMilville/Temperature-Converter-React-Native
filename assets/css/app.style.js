@@ -11,12 +11,10 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
   workspace: {
-    width: "100%",
+    width: "75%",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "gray",
     gap: 50,
-    paddingTop: 50,
-    paddingBottom: 50,
+    paddingVertical: 50,
   },
 });
