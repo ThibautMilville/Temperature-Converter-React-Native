@@ -1,16 +1,22 @@
 import { StyleSheet } from "react-native"
 
 export const styles = StyleSheet.create({
+  imageBackground: {
+    flex: 1,
+    justifyContent: "center"
+  },
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
   workspace: {
-    flex: 1,
-    backgroundColor: "#fff",
+    width: "100%",
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "gray",
+    gap: 50,
+    paddingTop: 50,
+    paddingBottom: 50,
   },
 });
