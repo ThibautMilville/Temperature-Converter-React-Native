@@ -1,12 +1,15 @@
 // IMPORTS
-import { DEFAULT_TEMPERATURE, UNITS } from '../constants';
+import { UNITS } from "../constants";
 
 export function getOppositUnit(unit) {
   return unit === UNITS.celcius ? UNITS.farenheit : UNITS.celcius;
 }
 
-export function convertTemperature(temperatureCelsius, setTemperatureFahrenheit, setTemperatureCelsius) {
-  const convertedTemperature = (temperatureCelsius * 9/5) + 32;
+export function convertTemperature(temperatureCelsius, setTemperatureFahrenheit) {
+  const convertedTemperature = (temperatureCelsius * 9) / 5 + 32;
   setTemperatureFahrenheit(convertedTemperature.toString());
-  setTemperatureCelsius(DEFAULT_TEMPERATURE);
+}
+
+export function isIceTemperature(unit, value) {
+  return unit === UNITS.celcius ? value < 0 : value < 32;
 }
