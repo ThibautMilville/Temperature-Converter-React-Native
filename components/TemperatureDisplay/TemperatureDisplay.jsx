@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { styles } from "./TemperatureDisplay.style";
+import { UNITS, DEFAULT_TEMPERATURE } from "../../constants";
 
-export function TemperatureDisplay({ temperature, unit }) {
+export function TemperatureDisplay({ temperature }) {
   return (
     <View>
-			<Text>{temperature + ' ' + unit}</Text>
+			<Text>{temperature + ' ' + UNITS.farenheit}</Text>
     </View>
   );
 }
